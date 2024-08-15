@@ -1,18 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        'lullipop-pink': '#e17e99',
+        'lullipop-teal': '#07F2C7',
+        'deep-plum': '#4B2843',
+        'soft-coral': '#FFA07A',
+        'off-white': '#F9F9F9',
+        'light-gray': '#E5E5E5',
+        'charcoal-gray': '#333333',
+        'vibrant-yellow': '#FFD700',
+        'muted-navy': '#002C3E',
       },
     },
   },
-  plugins: [],
+  plugins: [nextui()],
 };
